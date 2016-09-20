@@ -1,0 +1,23 @@
+{
+  "name": "jest-coderoad",
+  "version": "0.1.0",
+  "description": "jest test runner for coderoad",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderoad/jest-coderoad.git"
+  },
+  "keywords": [
+    "coderoad",
+    "jest"
+  ],
+  "author": "Shawn McKay <shawn.j.mckay@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderoad/jest-coderoad/issues"
+  },
+  "homepage": "https://github.com/coderoad/jest-coderoad#readme"
+}
