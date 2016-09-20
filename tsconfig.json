@@ -12,15 +12,11 @@
     "buildOnSave": true,
     "filesGlob": [
         "src/*.ts",
-        "src/**/*.ts",
-        "src/typings/**/*.d.ts"
+        "src/**/*.ts"
     ],
     "files": [
     ],
     "exclude": [
         "node_modules"
-    ],
-    "atom": {
-        "rewriteTsconfig": true
-    }
+    ]
 }

@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/coderoad/jest-coderoad/issues"
   },
-  "homepage": "https://github.com/coderoad/jest-coderoad#readme"
+  "homepage": "https://github.com/coderoad/jest-coderoad#readme",
+  "dependencies": {
+    "babel-jest": "^15.0.0",
+    "jest": "^15.1.1",
+    "js-coderoad": "^0.2.1",
+    "node-file-exists": "1.1.0"
+  }
 }
