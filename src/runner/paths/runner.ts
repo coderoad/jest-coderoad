@@ -11,8 +11,6 @@ export default function getRunner(): string {
   const nested = join.apply(this, nestedPath);
   const flattened = join.apply(this, flattenedPath);
 
-  console.log('nested: ', nested, 'flattened: ', flattened);
-
   if (fileExists(nested)) {
     return nested;
   } else if (fileExists(flattened)) {

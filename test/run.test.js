@@ -7,7 +7,10 @@ const handleResult = (res) => {
   console.log(res);
 }
 
-const runTest = (testPath) => run({ dir, taskPosition, handleResult, testPath: resolve(__dirname, test, testPath) });
+const runTest = (file) => {
+  const testPath = resolve(__dirname, 'test', file);
+  run({ dir, taskPosition, handleResult, testPath });
+};
 
 describe('basic', () => {
 
