@@ -8,10 +8,15 @@ const flattenedPath = [__dirname, '..', '..', '..', 'node_modules'].concat(runne
 
 export default function getRunner(): string {
   // runner, location may differ based on NPM version
-  if (fileExists(join(...nestedPath))) {
-    return join(...nestedPath);
-  } else if (fileExists(join(...flattenedPath))) {
-    return join(...flattenedPath);
+  const nested = join.apply(this, nestedPath);
+  const flattened = join.apply(this, flattenedPath);
+
+  console.log('nested: ', nested, 'flattened: ', flattened);
+
+  if (fileExists(nested)) {
+    return nested;
+  } else if (fileExists(flattened)) {
+    return flattened;
   }
   throw new Error('Error finding test runner.');
 }

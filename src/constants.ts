@@ -3,7 +3,7 @@
 export const signal = '@@@CodeRoad Results@@@';
 
 // path to test runner executable from "node_modules"
-export const runnerPath = ['jest', 'bin', 'jest'];
+export const runnerPath = ['jest', 'bin', 'jest.js'];
 
 // options passed in the runner command process
 export const runnerOptions = [
